@@ -24,8 +24,4 @@ public class Tarea {
         FINALIZADO
     }
 
-    @Override
-    public String toString() {
-        return "Tarea:\n" + "Titulo:" + titulo + "\nDescripcion:" + descripcion+ "\nEstado:" + estadoIni;
-    }
 }
