@@ -47,7 +47,7 @@ public class UsuarioUtils {
     }
     public boolean verifClave(String nombreUsuario, String clave) {
         return usuarios.stream()
-                .filter(usuario -> usuario.getNombre().equals(nombreUsuario))
+                .filter(usuario -> usuario.getNombre().equalsIgnoreCase(nombreUsuario))
                 .anyMatch(usuario -> usuario.getClave().equals(clave));
     }
 }
