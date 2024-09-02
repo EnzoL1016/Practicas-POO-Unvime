@@ -30,7 +30,8 @@ public class Main {
             leer.nextLine();
             if(opcion >= 3 && opcion <= 6 && (userActual == null)) {
                 opcion = -1;
-                
+            }else if(opcion < 3 && (userActual != null)){
+                opcion = -1;
             }
             switch(opcion) {
                 case 1:
